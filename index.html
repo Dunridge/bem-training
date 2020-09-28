@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Block Element Modifiers - BEM</h1>
+    <!-- A block in BEM -->
+    <div class="user">
+        <!-- An element in BEM -->
+        <img src="pictures/download.png" alt="user photo" class="user__photo">
+        <!-- An element in BEM -->
+        <div class="user__name">
+            <!-- Don't use classnames like class="user__name__text" -->
+            <!-- instead use user__text -->
+            <span class="user__text">Jeffery</span>
+            <i class="icon--user user__icon"></i>
+        </div>
+        <!-- Another block inside of a block -->
+        <!-- The second class name is a modifier -->
+        <button class="button button--primary">View Profile</button>
+        <!-- <button class="button button--warning">Delete</button> -->
+    </div>
+    <div class="user user--darktheme">
+        <!-- An element in BEM -->
+        <img src="pictures/download.png" alt="user photo" class="user__photo">
+        <!-- An element in BEM -->
+        <div class="user__name">Jeffery</div>
+        <!-- Another block inside of a block -->
+        <!-- The second class name is a modifier -->
+        <button class="button button--primary">View Profile</button>
+        <!-- <button class="button button--warning">Delete</button> -->
+    </div>
+</body>
+</html>
